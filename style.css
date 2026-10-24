@@ -1,0 +1,245 @@
+
+@font-face {
+    font-family: 'Tjiwidej Heritage Script';
+    src: url('fonts/TjiwidejHeritageScript-Reg.eot');
+    src: url('fonts/TjiwidejHeritageScript-Reg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TjiwidejHeritageScript-Reg.woff2') format('woff2'),
+        url('fonts/TjiwidejHeritageScript-Reg.woff') format('woff'),
+        url('fonts/TjiwidejHeritageScript-Reg.ttf') format('truetype'),
+        url('fonts/TjiwidejHeritageScript-Reg.svg#TjiwidejHeritageScript-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tjiwidej Heritage Serif';
+    src: url('fonts/TjiwidejHeritageSerif-Regular.eot');
+    src: url('fonts/TjiwidejHeritageSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TjiwidejHeritageSerif-Regular.woff2') format('woff2'),
+        url('fonts/TjiwidejHeritageSerif-Regular.woff') format('woff'),
+        url('fonts/TjiwidejHeritageSerif-Regular.ttf') format('truetype'),
+        url('fonts/TjiwidejHeritageSerif-Regular.svg#TjiwidejHeritageSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+h1{
+    font-family: 'Tjiwidej Heritage Script';
+    font-size: 55px;
+    text-shadow: -2px 2px 0px black;
+    color: white;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Tjiwidej Heritage Serif';
+}
+
+p {
+    font-family: 'Tjiwidej Heritage Serif';
+}
+img {
+    width: 150px;
+}
+
+i {
+    color: rgb(252, 238, 119);
+    font-size: 22px;
+}
+
+.dorado {
+    color: rgb(130, 101, 27);
+}
+
+body {
+    width:100%;
+    height: 100vh;
+    margin: 0;
+    font-family : 'Tjiwidej Heritage Serif' sans-serif,Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+.contenedor-principal {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+
+    position: relative; 
+    isolation: isolate;
+
+    background-image: url(img/fundo.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 10px;
+}
+
+/* Capa oscura semitransparente */
+.contenedor-principal::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.334);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+
+.linea-1 {
+    width: 40px ;
+    height: 2px ;
+    background: linear-gradient(to left, rgb(78, 69, 12), transparent);
+}
+
+.linea-2 {
+    width: 40px ;
+    height: 2px ;
+    background: linear-gradient(to right, rgb(78, 69, 12), transparent);
+}
+
+.linea-caja {
+    width: 50px;
+    height: 2px;
+    background-color: rgb(155, 145, 59);
+    border-radius: 999px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+.caja-logo p{
+    font-family: 'Tjiwidej Heritage Serif';
+    font-size: 16px;
+}
+
+
+
+.btn-orcamento {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 100%;
+    padding: 12px 20px;
+
+    background: linear-gradient(
+        to top,
+        rgb(24, 18, 3),
+        rgb(207, 225, 72)
+    );
+    border: none;
+    border-radius: 999px;
+    color: rgb(1, 24, 1);
+    margin: 20px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    box-shadow:
+        inset 0px 2px 4px rgb(238, 252, 169),
+        -2px 4px 8px rgba(0, 0, 0, 0.484);
+}
+
+.btn-orcamento:active {
+    transform: scale(0.95);
+}
+
+.btn-orcamento:hover {
+    opacity: 0.9;
+    border: none;
+    color: rgb(1, 24, 1);
+}
+
+.btn-orcamento i {
+    color: rgb(1, 24, 1);
+    font-size: 30px;
+}
+
+.contatos {
+    padding: 20px 0 ;
+}
+
+.caja-contato {
+    height: 100%;
+}
+
+.caja-contato a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.4s ease;
+}
+
+
+.caja-contato a:active {
+    transform: scale(0.9);
+}
+
+.caja-contato i {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient( circle, black 45% , rgba(90, 85, 7, 0.882)100% ) ;
+    padding: 10px;
+    border-radius : 50% ;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    color: beige;
+    border: 2px solid rgb(130, 101, 27)
+}
+
+.caja-contato span {
+    letter-spacing: 1.1px;
+    color: beige;
+}
+
+.text-footer {
+    letter-spacing: 1.2px;
+}
+
+.dev {
+    background-color: rgba(20, 47, 2, 0.819);
+    color: rgb(163, 197, 151);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 11px;
+}
+
+.dev:hover {
+    color: aliceblue;
+}
+
+.contenedor-principal footer {
+    position: static;
+    margin-top: auto;
+}
+
+.contenedor-principal main {
+    position: static;
+    margin-top: auto;
+}
+
+footer img{
+    width: 70px;
+}
+
+@media (min-width: 768px) {
+    .btn-orcamento {
+        width: 50%;
+    }
+
+}
