@@ -56,11 +56,20 @@ i {
 }
 
 body {
-    width:100%;
+
+    max-width: 780px;
     height: 100vh;
     margin: 0;
     font-family : 'Tjiwidej Heritage Serif' sans-serif,Arial, Helvetica, sans-serif;
     color: white;
+    margin: auto;
+    background: radial-gradient(
+        circle,
+        black 66%,
+        rgb(2, 26, 2) 88%,
+        rgb(6, 37, 7) 100%
+        
+    );
 }
 
 
